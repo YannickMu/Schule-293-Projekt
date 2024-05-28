@@ -30,6 +30,33 @@ a:visited {
 	color: var(--dg);
 }
 
+article {
+	grid-column: span 2;
+}
+
+#skillboard {
+	display: grid;
+	width: 100%;
+	justify-items: center;
+}
+
+.skbar {
+	height: 4vh;
+	width: 80%;
+	background-color: #888888;
+}
+
+.python {
+	color: var(--tx);
+	display: grid;
+	align-items: center;
+	text-align: right;
+	height: 4vh;
+	width: 88%;
+	background-color: var(--dg);
+	padding-right: 2%;
+}
+
 body {
 	background: var(--bg);
 	height: 98vh;
@@ -39,8 +66,8 @@ body {
 
 .grid {
 	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
+	grid-template-columns: repeat(auto-fit, 50%);
+	justify-items: center;
 }
 
 .menu-icon {
@@ -149,6 +176,18 @@ pre .string {
 	cursor: pointer;
 }
 
+@media (max-width: 950px) {
+	body {
+		font-size: 12pt;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 100%);
+		justify-items: center;
+	}
+}
+
 @media (max-width: 600px) {
 	body {
 		font-size: 12pt;
@@ -156,7 +195,8 @@ pre .string {
 
 	.grid {
 		display: grid;
-		grid-template-column: 100%;
+		grid-template-columns: repeat(auto-fill, 100%);
+		justify-items: center;
 	}
 
 	.hor {
@@ -179,13 +219,14 @@ pre .string {
 	.menu-icon div {
 		width: 25px;
 		height: 3px;
-		background: #fff;
+		background: var(--hg);
 		margin: 4px 0;
 	}
 
 	.ul {
 		display: none;
 		padding-top: 12vh;
+		padding-bottom: 1vw;
 		width: 100%;
 		background-color: var(--bg);
 		flex-direction: column;
@@ -200,7 +241,9 @@ pre .string {
 
 	.menu-toggle:checked ~ .menu-icon {
 		z-index: 9;
-		padding: 3vw 3vw;
+		margin-right: -13vw;
+		margin-top: 1vw;
+		padding: 3vw 4vw;
 		border-radius: 10px;
 		background-color: rgba(255, 255, 255, 0.3);
 	}
