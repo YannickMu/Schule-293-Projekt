@@ -55,7 +55,7 @@ a:visited {
 }
 
 .python {
-	color: var(--tx);
+	color: #FFFFFF;
 	display: grid;
 	align-items: center;
 	text-align: right;
@@ -66,7 +66,7 @@ a:visited {
 }
 
 .html {
-	color: var(--tx);
+	color: #FFFFFF;
 	display: grid;
 	align-items: center;
 	text-align: right;
@@ -77,7 +77,7 @@ a:visited {
 }
 
 .css {
-	color: var(--tx);
+	color: #FFFFFF;
 	display: grid;
 	align-items: center;
 	text-align: right;
@@ -88,7 +88,7 @@ a:visited {
 }
 
 .c {
-	color: var(--tx);
+	color:#FFFFFF;
 	display: grid;
 	align-items: center;
 	text-align: right;
@@ -99,7 +99,7 @@ a:visited {
 }
 
 .rust {
-	color: var(--tx);
+	color: #FFFFFF;
 	display: grid;
 	align-items: center;
 	text-align: right;
@@ -124,6 +124,22 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 50%);
 	justify-items: center;
+}
+
+#abmegrid {
+	width: 80%;
+	justify-self: center;
+	justify-items: center;
+	display: grid;
+	grid-template-columns: 50vh auto;
+}
+
+.text {
+	color: var(--tx);
+	padding: 1vw 2vw;
+	background-color: rgba(255, 255, 255, 0.3);
+	height: fit-content;
+	border-radius: 5px;
 }
 
 .menu-icon {
@@ -224,6 +240,8 @@ pre .string {
 	transition: 0.7s;
 	padding: 15px;
 	cursor: pointer;
+	border-radius: 6%;
+	height: 40vh;
 }
 
 .sqimg:hover {
@@ -237,7 +255,7 @@ pre .string {
 		font-size: 12pt;
 	}
 
-	.grid {
+	.grid, #abmegrid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, 100%);
 		justify-items: center;
@@ -257,6 +275,11 @@ pre .string {
 		font-size: 12pt;
 	}
 
+	#navi {
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+	}
+
 	#skillboard {
 		grid-column: span 1;
 		display: grid;
@@ -265,7 +288,7 @@ pre .string {
 		margin-bottom: 2vh;
 	}
 
-	.grid {
+	.grid, #abmegrid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, 100%);
 		justify-items: center;
@@ -286,6 +309,7 @@ pre .string {
 		display: flex;
 		flex-direction: column;
 		cursor: pointer;
+		padding-right: 4vw;
 	}
 
 	.menu-icon div {
@@ -315,6 +339,7 @@ pre .string {
 		z-index: 9;
 		margin-left: -13vw;
 		margin-top: 1vw;
+		max-height: 8vw;
 		padding: 3vw 4vw;
 		border-radius: 10px;
 		background-color: rgba(255, 255, 255, 0.3);

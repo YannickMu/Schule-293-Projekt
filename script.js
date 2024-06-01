@@ -9,11 +9,9 @@ function init() {
         if (this.checked) {
             nav.style.backgroundColor = 'var(--bg)';  // Change as needed
             nav.style.display = 'flex';
-            nav.style.flexDirection = 'row-reverse'
         } else {
             nav.style.backgroundColor = 'rgba(255,255,255,0.3)'; // Reset to initial or default
             nav.style.display = 'flex';
-            nav.style.flexDirection = 'row'
         }
     });
 };
