@@ -333,6 +333,7 @@ pre .string {
 .hobby .overlay p {
 	margin: 0;
 	font-size: 18px;
+	padding-top: 50%;
 }
 
 .hobby:hover img, .hobby:active img {
