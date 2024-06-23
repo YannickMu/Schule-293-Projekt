@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Yannick Müller</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/x-icon" href="./favicon.png">
 </head>
@@ -22,6 +23,22 @@
 			<a class="gla active" href="./contact.html">Kontakt</a>
 		</div>
 	</nav>
+	<form class="contact-form">
+		<h2>Kontaktformular</h2>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="fname">Vorname:</label>
+		<input type="text" id="fname" name="fname" required>
+
+		<label for="email">E-Mail:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="message">Nachricht:</label>
+		<textarea id="message" name="message" rows="5" required></textarea>
+
+		<button type="submit">Absenden</button>
+	</form>
 	<footer class="glcont ver">
 		<a href="./impressum.html">Impressum</a>
 		<p>Made by 01011001 01100001 01101110 01101110 01101001 01100011 01101011</p>
